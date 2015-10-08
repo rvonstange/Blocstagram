@@ -1,13 +1,14 @@
 //
-//  ImagesTableViewController.h
+//  Comment.m
 //  Blocstagram
 //
 //  Created by Robert von Stange on 10/7/15.
 //  Copyright (c) 2015 Robert von Stange. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "Comment.h"
+#import "User.h"
 
-@interface ImagesTableViewController : UITableViewController
+@implementation Comment
 
 @end

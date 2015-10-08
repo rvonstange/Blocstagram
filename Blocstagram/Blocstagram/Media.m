@@ -1,13 +1,14 @@
 //
-//  ImagesTableViewController.h
+//  Media.m
 //  Blocstagram
 //
 //  Created by Robert von Stange on 10/7/15.
 //  Copyright (c) 2015 Robert von Stange. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "Media.h"
+#import "User.h"
 
-@interface ImagesTableViewController : UITableViewController
+@implementation Media
 
 @end
