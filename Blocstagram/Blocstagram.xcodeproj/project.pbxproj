@@ -27,6 +27,7 @@
 		D4AF6F501BC5E5890005FA0E /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AF6F4F1BC5E5890005FA0E /* Media.m */; };
 		D4AF6F531BC5E5DF0005FA0E /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AF6F521BC5E5DF0005FA0E /* Comment.m */; };
 		D4AF6F561BC5E6F20005FA0E /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AF6F551BC5E6F20005FA0E /* DataSource.m */; };
+		D4AF6F591BC5FCED0005FA0E /* MediaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AF6F581BC5FCED0005FA0E /* MediaTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		D4AF6F521BC5E5DF0005FA0E /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
 		D4AF6F541BC5E6F20005FA0E /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
 		D4AF6F551BC5E6F20005FA0E /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
+		D4AF6F571BC5FCED0005FA0E /* MediaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaTableViewCell.h; sourceTree = "<group>"; };
+		D4AF6F581BC5FCED0005FA0E /* MediaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 		D4AF6F0C1BC5A7BA0005FA0E /* Blocstagram */ = {
 			isa = PBXGroup;
 			children = (
+				D4AF6F571BC5FCED0005FA0E /* MediaTableViewCell.h */,
+				D4AF6F581BC5FCED0005FA0E /* MediaTableViewCell.m */,
 				D4AF6F481BC5A93C0005FA0E /* ImagesTableViewController.h */,
 				D4AF6F491BC5A93C0005FA0E /* ImagesTableViewController.m */,
 				D4AF6F4B1BC5E4940005FA0E /* User.h */,
@@ -285,6 +290,7 @@
 			files = (
 				D4AF6F4D1BC5E4940005FA0E /* User.m in Sources */,
 				D4AF6F531BC5E5DF0005FA0E /* Comment.m in Sources */,
+				D4AF6F591BC5FCED0005FA0E /* MediaTableViewCell.m in Sources */,
 				D4AF6F501BC5E5890005FA0E /* Media.m in Sources */,
 				D4AF6F131BC5A7BA0005FA0E /* AppDelegate.m in Sources */,
 				D4AF6F561BC5E6F20005FA0E /* DataSource.m in Sources */,
