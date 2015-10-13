@@ -11,10 +11,9 @@
 #import "Media.h"
 #import "Comment.h"
 
-@interface DataSource ()
-
-@property (nonatomic, strong) NSArray *mediaItems;
-
+@interface DataSource () {
+    NSMutableArray *_mediaItems;
+}
 @end
 
 @implementation DataSource
@@ -66,7 +65,7 @@
         }
     }
     
-    self.mediaItems = randomMediaItems;
+    _mediaItems = randomMediaItems;
 }
 
 - (User *) randomUser {
@@ -114,6 +113,37 @@
     }
     
     return [NSString stringWithString:s];
+}
+
+#pragma mark - Key/Value Observing
+
+- (NSUInteger) countOfMediaItems {
+    return self.mediaItems.count;
+}
+
+- (id) objectInMediaItemsAtIndex:(NSUInteger)index {
+    return [self.mediaItems objectAtIndex:index];
+}
+
+- (NSArray *) mediaItemsAtIndexes:(NSIndexSet *)indexes {
+    return [self.mediaItems objectsAtIndexes:indexes];
+}
+
+- (void) insertObject:(Media *)object inMediaItemsAtIndex:(NSUInteger)index {
+    [_mediaItems insertObject:object atIndex:index];
+}
+
+- (void) removeObjectFromMediaItemsAtIndex:(NSUInteger)index {
+    [_mediaItems removeObjectAtIndex:index];
+}
+
+- (void) replaceObjectInMediaItemsAtIndex:(NSUInteger)index withObject:(id)object {
+    [_mediaItems replaceObjectAtIndex:index withObject:object];
+}
+
+- (void) deleteMediaItem:(Media *)item {
+    NSMutableArray *mutableArrayWithKVO = [self mutableArrayValueForKey:@"mediaItems"];
+    [mutableArrayWithKVO removeObject:item];
 }
 
 @end

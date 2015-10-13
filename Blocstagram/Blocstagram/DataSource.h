@@ -8,7 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@class Media;
+
 @interface DataSource : NSObject
+
+- (void) deleteMediaItem:(Media *)item;
+- (void) insertObject:(Media *)object inMediaItemsAtIndex:(NSUInteger)index;
+- (void) removeObjectFromMediaItemsAtIndex:(NSUInteger)index;
 
 +(instancetype) sharedInstance;
 @property (nonatomic, strong, readonly) NSArray *mediaItems;
