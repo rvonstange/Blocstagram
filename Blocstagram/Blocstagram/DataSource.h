@@ -16,14 +16,7 @@
 - (void) insertObject:(Media *)object inMediaItemsAtIndex:(NSUInteger)index;
 - (void) removeObjectFromMediaItemsAtIndex:(NSUInteger)index;
 
-typedef void (^NewItemCompletionBlock)(NSError *error);
-
-
 +(instancetype) sharedInstance;
 @property (nonatomic, strong, readonly) NSArray *mediaItems;
-
-- (void) requestNewItemsWithCompletionHandler:(NewItemCompletionBlock)completionHandler;
-- (void) requestOldItemsWithCompletionHandler:(NewItemCompletionBlock)completionHandler;
-
 
 @end
