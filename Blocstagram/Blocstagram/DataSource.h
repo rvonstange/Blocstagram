@@ -10,6 +10,8 @@
 
 @class Media;
 
+typedef void (^NewItemCompletionBlock)(NSError *error);
+
 @interface DataSource : NSObject
 
 - (void) deleteMediaItem:(Media *)item;
@@ -20,12 +22,10 @@
 @property (nonatomic, strong, readonly) NSArray *mediaItems;
 @property (nonatomic, strong, readonly) NSString *accessToken;
 
-<<<<<<< HEAD
-=======
+
 - (void) requestNewItemsWithCompletionHandler:(NewItemCompletionBlock)completionHandler;
 - (void) requestOldItemsWithCompletionHandler:(NewItemCompletionBlock)completionHandler;
 
 + (NSString *) instagramClientID;
 
->>>>>>> checkpoint-33
 @end

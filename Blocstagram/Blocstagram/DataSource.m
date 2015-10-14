@@ -16,15 +16,12 @@
 @interface DataSource () {
     NSMutableArray *_mediaItems;
 }
-<<<<<<< HEAD
-=======
 
 @property (nonatomic, assign) BOOL isRefreshing;
 @property (nonatomic, assign) BOOL isLoadingOlderItems;
 @property (nonatomic, strong) NSString *accessToken;
 
 
->>>>>>> checkpoint-33
 @end
 
 @implementation DataSource
@@ -61,8 +58,6 @@
     return @"a2dae5bc32804ba0a7a64debefc5f85c";
 }
 
-<<<<<<< HEAD
-=======
 #pragma mark - Refresh
 - (void) requestNewItemsWithCompletionHandler:(NewItemCompletionBlock)completionHandler {
     // #1
@@ -136,7 +131,6 @@
     NSLog(@"%@", feedDictionary);
 }
 
->>>>>>> checkpoint-33
 #pragma mark - Key/Value Observing
 
 - (NSUInteger) countOfMediaItems {
