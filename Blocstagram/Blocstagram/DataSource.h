@@ -18,5 +18,14 @@
 
 +(instancetype) sharedInstance;
 @property (nonatomic, strong, readonly) NSArray *mediaItems;
+@property (nonatomic, strong, readonly) NSString *accessToken;
 
+<<<<<<< HEAD
+=======
+- (void) requestNewItemsWithCompletionHandler:(NewItemCompletionBlock)completionHandler;
+- (void) requestOldItemsWithCompletionHandler:(NewItemCompletionBlock)completionHandler;
+
++ (NSString *) instagramClientID;
+
+>>>>>>> checkpoint-33
 @end
