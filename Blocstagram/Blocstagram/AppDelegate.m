@@ -34,12 +34,13 @@
         [[NSNotificationCenter defaultCenter] addObserverForName:LoginViewControllerDidGetAccessTokenNotification object:nil queue:nil usingBlock:^(NSNotification *note) {
             ImagesTableViewController *imagesVC = [[ImagesTableViewController alloc] init];
             [navVC setViewControllers:@[imagesVC] animated:YES];
+            [[DataSource sharedInstance] requestNewItemsWithCompletionHandler:nil];
         }];
     } else {
         ImagesTableViewController *imagesVC = [[ImagesTableViewController alloc] init];
         [navVC setViewControllers:@[imagesVC] animated:YES];
+        [[DataSource sharedInstance] requestNewItemsWithCompletionHandler:nil];
     }
-    
     self.window.rootViewController = navVC;
     
     self.window.backgroundColor = [UIColor whiteColor];
