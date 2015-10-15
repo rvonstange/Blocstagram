@@ -17,5 +17,6 @@
 @property (nonatomic, strong) NSString *text;
 @property (nonatomic, assign) BOOL leftAlign;
 
+- (instancetype) initWithDictionary:(NSDictionary *)commentDictionary;
 
 @end
