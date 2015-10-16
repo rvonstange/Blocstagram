@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4F424CDE1C4203D587BF3C3E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD95E3EB0F2BD89F233F87E7 /* libPods.a */; };
 		D402E0951BCE97CC00BA72F5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D402E0941BCE97CC00BA72F5 /* LoginViewController.m */; };
+		D409C7E21BD02EED001CC4BC /* MediaFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D409C7E11BD02EED001CC4BC /* MediaFullScreenViewController.m */; };
+		D409C7E51BD19359001CC4BC /* MediaFullScreenAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = D409C7E41BD19359001CC4BC /* MediaFullScreenAnimator.m */; };
 		D4AF6F101BC5A7BA0005FA0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AF6F0F1BC5A7BA0005FA0E /* main.m */; };
 		D4AF6F131BC5A7BA0005FA0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AF6F121BC5A7BA0005FA0E /* AppDelegate.m */; };
 		D4AF6F1B1BC5A7BA0005FA0E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4AF6F1A1BC5A7BA0005FA0E /* Images.xcassets */; };
@@ -47,6 +49,10 @@
 		CD95E3EB0F2BD89F233F87E7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D402E0931BCE97CC00BA72F5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		D402E0941BCE97CC00BA72F5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		D409C7E01BD02EED001CC4BC /* MediaFullScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaFullScreenViewController.h; sourceTree = "<group>"; };
+		D409C7E11BD02EED001CC4BC /* MediaFullScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaFullScreenViewController.m; sourceTree = "<group>"; };
+		D409C7E31BD19359001CC4BC /* MediaFullScreenAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaFullScreenAnimator.h; sourceTree = "<group>"; };
+		D409C7E41BD19359001CC4BC /* MediaFullScreenAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaFullScreenAnimator.m; sourceTree = "<group>"; };
 		D4AF6F0A1BC5A7BA0005FA0E /* Blocstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blocstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4AF6F0E1BC5A7BA0005FA0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4AF6F0F1BC5A7BA0005FA0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -143,6 +149,10 @@
 			children = (
 				D4AF6F571BC5FCED0005FA0E /* MediaTableViewCell.h */,
 				D4AF6F581BC5FCED0005FA0E /* MediaTableViewCell.m */,
+				D409C7E01BD02EED001CC4BC /* MediaFullScreenViewController.h */,
+				D409C7E11BD02EED001CC4BC /* MediaFullScreenViewController.m */,
+				D409C7E31BD19359001CC4BC /* MediaFullScreenAnimator.h */,
+				D409C7E41BD19359001CC4BC /* MediaFullScreenAnimator.m */,
 				D4AF6F481BC5A93C0005FA0E /* ImagesTableViewController.h */,
 				D4AF6F491BC5A93C0005FA0E /* ImagesTableViewController.m */,
 				D4AF6F4B1BC5E4940005FA0E /* User.h */,
@@ -368,9 +378,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D409C7E21BD02EED001CC4BC /* MediaFullScreenViewController.m in Sources */,
 				D4AF6F4D1BC5E4940005FA0E /* User.m in Sources */,
 				D4AF6F531BC5E5DF0005FA0E /* Comment.m in Sources */,
 				D4AF6F591BC5FCED0005FA0E /* MediaTableViewCell.m in Sources */,
+				D409C7E51BD19359001CC4BC /* MediaFullScreenAnimator.m in Sources */,
 				D4AF6F501BC5E5890005FA0E /* Media.m in Sources */,
 				D4AF6F131BC5A7BA0005FA0E /* AppDelegate.m in Sources */,
 				D402E0951BCE97CC00BA72F5 /* LoginViewController.m in Sources */,
