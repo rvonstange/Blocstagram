@@ -10,6 +10,7 @@
 #import "Media.h"
 #import "Comment.h"
 #import "User.h"
+#import "DataSource.h"
 
 @interface MediaTableViewCell () <UIGestureRecognizerDelegate>
 
@@ -22,6 +23,7 @@
 @property (nonatomic, strong) NSLayoutConstraint *commentLabelHeightConstraint;
 @property (nonatomic, strong) UITapGestureRecognizer *tapGestureRecognizer;
 @property (nonatomic, strong) UILongPressGestureRecognizer *longPressGestureRecognizer;
+@property (nonatomic, strong) UITapGestureRecognizer *doubleTap;
 
 
 
@@ -53,6 +55,12 @@ static BOOL leftAlign;
         self.longPressGestureRecognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressFired:)];
         self.longPressGestureRecognizer.delegate = self;
         [self.mediaImageView addGestureRecognizer:self.longPressGestureRecognizer];
+        
+        self.doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTapFired:)];
+        self.doubleTap.numberOfTouchesRequired = 2;
+        
+        [self.tapGestureRecognizer requireGestureRecognizerToFail:self.doubleTap];
+        [self.mediaImageView addGestureRecognizer:self.doubleTap];
         
         self.usernameAndCaptionLabel = [[UILabel alloc] init];
         self.usernameAndCaptionLabel.numberOfLines = 0;
@@ -125,6 +133,10 @@ static BOOL leftAlign;
     if (sender.state == UIGestureRecognizerStateBegan) {
         [self.delegate cell:self didLongPressImageView:self.mediaImageView];
     }
+}
+
+- (void) doubleTapFired:(UITapGestureRecognizer *)sender {
+    [self.delegate cell:self didTapPhoto:self.mediaImageView];
 }
 
 #pragma mark - UIGestureRecognizerDelegate

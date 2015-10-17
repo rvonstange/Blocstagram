@@ -176,6 +176,10 @@
     [self presentViewController:fullScreenVC animated:YES completion:nil];
 }
 
+- (void) cell:(MediaTableViewCell *)cell didTapPhoto:(UIImageView *)imageView {
+    [[DataSource sharedInstance] downloadImageForMediaItem:cell.mediaItem];
+}
+
 - (void) cell:(MediaTableViewCell *)cell didLongPressImageView:(UIImageView *)imageView {
     NSMutableArray *itemsToShare = [NSMutableArray array];
     
