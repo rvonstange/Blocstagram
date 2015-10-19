@@ -90,7 +90,7 @@ static BOOL leftAlign;
                                                                      toItem:nil
                                                                   attribute:NSLayoutAttributeNotAnAttribute
                                                                  multiplier:1
-                                                                   constant:100];
+                                                                   constant:400];
         /*self.imageWidthConstraint = [NSLayoutConstraint constraintWithItem:_mediaImageView
                                                                   attribute:NSLayoutAttributeWidth
                                                                   relatedBy:NSLayoutRelationEqual
@@ -99,7 +99,6 @@ static BOOL leftAlign;
                                                                  multiplier:1
                                                                    constant:0];*/
         self.imageHeightConstraint.identifier = @"Image height constraint";
-        
         self.usernameAndCaptionLabelHeightConstraint = [NSLayoutConstraint constraintWithItem:_usernameAndCaptionLabel
                                                                                     attribute:NSLayoutAttributeHeight
                                                                                     relatedBy:NSLayoutRelationEqual
@@ -241,7 +240,10 @@ static BOOL leftAlign;
     
     self.usernameAndCaptionLabelHeightConstraint.constant = usernameLabelSize.height + 20;
     self.commentLabelHeightConstraint.constant = commentLabelSize.height + 20;
-    //self.imageHeightConstraint.constant = 100;//self.mediaItem.image.size.height / self.mediaItem.image.size.width * CGRectGetWidth(self.contentView.bounds);
+    if (self.mediaItem.image == nil) {
+        self.imageHeightConstraint.constant = 400;
+    }
+    //self.mediaItem.image.size.height / self.mediaItem.image.size.width * CGRectGetWidth(self.contentView.bounds);
     //self.imageWidthConstraint.constant = 100;
 
     
