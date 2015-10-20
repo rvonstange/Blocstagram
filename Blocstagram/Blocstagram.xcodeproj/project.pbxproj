@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4F424CDE1C4203D587BF3C3E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD95E3EB0F2BD89F233F87E7 /* libPods.a */; };
+		D402A5651BD5C5CE00463B84 /* ComposeCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = D402A5641BD5C5CE00463B84 /* ComposeCommentView.m */; };
 		D402E0951BCE97CC00BA72F5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D402E0941BCE97CC00BA72F5 /* LoginViewController.m */; };
 		D409C7E21BD02EED001CC4BC /* MediaFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D409C7E11BD02EED001CC4BC /* MediaFullScreenViewController.m */; };
 		D409C7E51BD19359001CC4BC /* MediaFullScreenAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = D409C7E41BD19359001CC4BC /* MediaFullScreenAnimator.m */; };
@@ -49,6 +50,8 @@
 /* Begin PBXFileReference section */
 		A61D1C1FFEE0FEA91B509245 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CD95E3EB0F2BD89F233F87E7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D402A5631BD5C5CE00463B84 /* ComposeCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeCommentView.h; sourceTree = "<group>"; };
+		D402A5641BD5C5CE00463B84 /* ComposeCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeCommentView.m; sourceTree = "<group>"; };
 		D402E0931BCE97CC00BA72F5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		D402E0941BCE97CC00BA72F5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		D409C7E01BD02EED001CC4BC /* MediaFullScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaFullScreenViewController.h; sourceTree = "<group>"; };
@@ -155,6 +158,8 @@
 			children = (
 				D4AF6F571BC5FCED0005FA0E /* MediaTableViewCell.h */,
 				D4AF6F581BC5FCED0005FA0E /* MediaTableViewCell.m */,
+				D402A5631BD5C5CE00463B84 /* ComposeCommentView.h */,
+				D402A5641BD5C5CE00463B84 /* ComposeCommentView.m */,
 				D409C7E01BD02EED001CC4BC /* MediaFullScreenViewController.h */,
 				D409C7E11BD02EED001CC4BC /* MediaFullScreenViewController.m */,
 				D409C7E31BD19359001CC4BC /* MediaFullScreenAnimator.h */,
@@ -399,6 +404,7 @@
 				D402E0951BCE97CC00BA72F5 /* LoginViewController.m in Sources */,
 				D4AF6F561BC5E6F20005FA0E /* DataSource.m in Sources */,
 				D409C7EB1BD48F05001CC4BC /* LikeButton.m in Sources */,
+				D402A5651BD5C5CE00463B84 /* ComposeCommentView.m in Sources */,
 				D4AF6F101BC5A7BA0005FA0E /* main.m in Sources */,
 				D4AF6F4A1BC5A93C0005FA0E /* ImagesTableViewController.m in Sources */,
 			);
