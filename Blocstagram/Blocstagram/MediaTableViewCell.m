@@ -122,7 +122,7 @@ static BOOL leftAlign;
                                                                      toItem:nil
                                                                   attribute:NSLayoutAttributeNotAnAttribute
                                                                  multiplier:1
-                                                                   constant:35];
+                                                                   constant:38];
         self.likeHeightConstraint.identifier = @"Like height constraint";
         self.usernameAndCaptionLabelHeightConstraint = [NSLayoutConstraint constraintWithItem:_usernameAndCaptionLabel
                                                                                     attribute:NSLayoutAttributeHeight
