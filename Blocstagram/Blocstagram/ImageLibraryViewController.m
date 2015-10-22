@@ -104,6 +104,7 @@
         imageView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
         imageView.contentMode = UIViewContentModeScaleAspectFill;
         imageView.clipsToBounds = YES;
+        
         [cell.contentView addSubview:imageView];
     }
     
@@ -154,7 +155,7 @@
     return reusableview;
 }
 
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
+/*- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
     
     [collectionView registerClass:[PhotoHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"header"];
     UICollectionReusableView *reusableview = nil;
@@ -163,7 +164,7 @@
     
     return CGSizeMake(self.collectionView.frame.size.width, 100.0);
     
-}
+}*/
 #pragma mark - CropImageViewControllerDelegate
 
 - (void) cropControllerFinishedWithImage:(UIImage *)croppedImage {
