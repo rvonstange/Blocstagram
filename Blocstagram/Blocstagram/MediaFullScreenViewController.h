@@ -15,10 +15,13 @@
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) UIImageView *imageView;
 
+@property (nonatomic, strong) Media *media;
+
 - (instancetype) initWithMedia:(Media *)media;
 
 - (void)sharePic:(UIButton *)sender;
 
 - (void) centerScrollView;
+- (void) recalculateZoomScale;
 
 @end
