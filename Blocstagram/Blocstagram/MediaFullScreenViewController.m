@@ -9,9 +9,10 @@
 #import "MediaFullScreenViewController.h"
 #import "Media.h"
 
-@interface MediaFullScreenViewController () <UIScrollViewDelegate>
+@interface MediaFullScreenViewController () <UIScrollViewDelegate, UIGestureRecognizerDelegate>
 
 @property (nonatomic, strong) UITapGestureRecognizer *tap;
+@property (nonatomic, strong) UITapGestureRecognizer *tapOutside;
 @property (nonatomic, strong) UITapGestureRecognizer *doubleTap;
 
 @end
@@ -59,11 +60,15 @@
     // #3
     self.scrollView.contentSize = self.media.image.size;
     
-    self.tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapFired:)];
     
     self.doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTapFired:)];
     self.doubleTap.numberOfTapsRequired = 2;
     
+    self.tapOutside = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapOutFired:)];
+    self.tapOutside.cancelsTouchesInView = NO;
+    self.tapOutside.delegate = self;
+
+    self.tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapFired:)];
     [self.tap requireGestureRecognizerToFail:self.doubleTap];
     
     [self.scrollView addGestureRecognizer:self.tap];
@@ -77,9 +82,24 @@
     [shareButton.titleLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:10.0]];
     [self.view addSubview:shareButton];
     
+    //create tap gesture .....
+    //assign to app window (remove this wehn view is closed)
+    
+    
 
 }
 
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+    return YES;
+}
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+        return YES;
+}
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+        return YES;
+}
 - (void) viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
     // #4
@@ -145,6 +165,15 @@
     [super viewWillAppear:animated];
     
     [self centerScrollView];
+    
+    [[[[UIApplication sharedApplication] delegate] window] addGestureRecognizer:self.tapOutside];
+}
+
+- (void) viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    
+    [[[[UIApplication sharedApplication] delegate] window] removeGestureRecognizer:self.tapOutside];
 }
 
 
@@ -153,6 +182,23 @@
 - (void) tapFired:(UITapGestureRecognizer *)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+- (void) tapOutFired:(UITapGestureRecognizer *)sender {
+    if (sender.state == UIGestureRecognizerStateEnded) {
+        CGPoint location = [sender locationInView:nil]; // Passing nil gives us coordinates in the window
+        CGPoint locationInVC = [self.presentedViewController.view convertPoint:location fromView:self.view.window];
+        
+        if ([self.presentedViewController.view pointInside:locationInVC withEvent:nil] == NO) {
+            // The tap was outside the VC's view
+            
+            if (self.presentingViewController) {
+                [self dismissViewControllerAnimated:YES completion:nil];
+            }
+        }
+        //[self dismissViewControllerAnimated:YES completion:nil];
+    }
+}
+
 
 - (void) doubleTapFired:(UITapGestureRecognizer *)sender {
     if (self.scrollView.zoomScale == self.scrollView.minimumZoomScale) {

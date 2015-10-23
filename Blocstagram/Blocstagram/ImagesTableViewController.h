@@ -10,4 +10,6 @@
 
 @interface ImagesTableViewController : UITableViewController
 
+@property (nonatomic, strong) UITapGestureRecognizer *tap;
+
 @end

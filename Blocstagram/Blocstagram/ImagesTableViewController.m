@@ -25,6 +25,7 @@
 @property (nonatomic, weak) UIImageView *lastTappedImageView;
 @property (nonatomic, weak) UIView *lastSelectedCommentView;
 @property (nonatomic, assign) CGFloat lastKeyboardAdjustment;
+@property (nonatomic, strong) UIWindow *window;
 
 @end
 
@@ -34,6 +35,9 @@
     [super viewDidLoad];
     
     [[DataSource sharedInstance] addObserver:self forKeyPath:@"mediaItems" options:0 context:nil];
+    
+//    self.tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapFired:)];
+//    self.window = [UIApplication sharedApplication].keyWindow;
     
     self.refreshControl = [[UIRefreshControl alloc] init];
     [self.refreshControl addTarget:self action:@selector(refreshControlDidFire:) forControlEvents:UIControlEventValueChanged];
@@ -115,6 +119,8 @@
 
         nav.modalPresentationStyle = UIModalPresentationPopover;
         UIPopoverPresentationController *popoverController = nav.popoverPresentationController;
+        nav.preferredContentSize =
+        CGSizeMake(self.view.frame.size.width/2.3, 500.0);
         popoverController.barButtonItem = sender;
         
         [self presentViewController:nav animated:YES completion:nil];
@@ -258,6 +264,7 @@
     
     if (self.traitCollection.horizontalSizeClass == UIUserInterfaceSizeClassRegular) {
         fullScreenVC.modalPresentationStyle = UIModalPresentationFormSheet;
+        //[self.view addGestureRecognizer:self.tap];
     } else {
         fullScreenVC.transitioningDelegate = self;
         fullScreenVC.modalPresentationStyle = UIModalPresentationCustom;
@@ -265,6 +272,12 @@
     
     [self presentViewController:fullScreenVC animated:YES completion:nil];
 }
+
+//- (void) tapFired:(UITapGestureRecognizer *)sender {
+//    [self.view removeGestureRecognizer:sender];
+//    [self dismissViewControllerAnimated:YES completion:nil];
+//
+//}
 
 - (void) cell:(MediaTableViewCell *)cell didTapPhoto:(UIImageView *)imageView {
     [[DataSource sharedInstance] downloadImageForMediaItem:cell.mediaItem];
