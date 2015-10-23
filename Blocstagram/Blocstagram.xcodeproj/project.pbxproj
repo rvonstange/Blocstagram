@@ -17,6 +17,7 @@
 		D402A5771BD8449000463B84 /* ImageLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D402A5761BD8449000463B84 /* ImageLibraryViewController.m */; };
 		D402A57A1BD8888D00463B84 /* PhotoHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D402A5791BD8888D00463B84 /* PhotoHeaderView.m */; };
 		D402A57D1BD98D5600463B84 /* PostToInstagramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D402A57C1BD98D5600463B84 /* PostToInstagramViewController.m */; };
+		D402A5801BDA93D800463B84 /* FilterViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D402A57F1BDA93D800463B84 /* FilterViewCell.m */; };
 		D402E0951BCE97CC00BA72F5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D402E0941BCE97CC00BA72F5 /* LoginViewController.m */; };
 		D409C7E21BD02EED001CC4BC /* MediaFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D409C7E11BD02EED001CC4BC /* MediaFullScreenViewController.m */; };
 		D409C7E51BD19359001CC4BC /* MediaFullScreenAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = D409C7E41BD19359001CC4BC /* MediaFullScreenAnimator.m */; };
@@ -76,6 +77,8 @@
 		D402A5791BD8888D00463B84 /* PhotoHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoHeaderView.m; sourceTree = "<group>"; };
 		D402A57B1BD98D5600463B84 /* PostToInstagramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostToInstagramViewController.h; sourceTree = "<group>"; };
 		D402A57C1BD98D5600463B84 /* PostToInstagramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostToInstagramViewController.m; sourceTree = "<group>"; };
+		D402A57E1BDA93D800463B84 /* FilterViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewCell.h; sourceTree = "<group>"; };
+		D402A57F1BDA93D800463B84 /* FilterViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewCell.m; sourceTree = "<group>"; };
 		D402E0931BCE97CC00BA72F5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		D402E0941BCE97CC00BA72F5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		D409C7E01BD02EED001CC4BC /* MediaFullScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaFullScreenViewController.h; sourceTree = "<group>"; };
@@ -204,6 +207,8 @@
 				D4AF6F521BC5E5DF0005FA0E /* Comment.m */,
 				D4AF6F541BC5E6F20005FA0E /* DataSource.h */,
 				D4AF6F551BC5E6F20005FA0E /* DataSource.m */,
+				D402A57E1BDA93D800463B84 /* FilterViewCell.h */,
+				D402A57F1BDA93D800463B84 /* FilterViewCell.m */,
 				D402E0931BCE97CC00BA72F5 /* LoginViewController.h */,
 				D402E0941BCE97CC00BA72F5 /* LoginViewController.m */,
 				D4AF6F331BC5A8C80005FA0E /* Images */,
@@ -449,6 +454,7 @@
 				D402A5681BD6963300463B84 /* CameraToolbar.m in Sources */,
 				D4AF6F561BC5E6F20005FA0E /* DataSource.m in Sources */,
 				D402A5771BD8449000463B84 /* ImageLibraryViewController.m in Sources */,
+				D402A5801BDA93D800463B84 /* FilterViewCell.m in Sources */,
 				D409C7EB1BD48F05001CC4BC /* LikeButton.m in Sources */,
 				D402A56E1BD6EA3500463B84 /* UIImage+ImageUtilities.m in Sources */,
 				D402A57D1BD98D5600463B84 /* PostToInstagramViewController.m in Sources */,
