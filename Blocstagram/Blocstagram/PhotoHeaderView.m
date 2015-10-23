@@ -14,7 +14,6 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        NSLog(@"Hello");
         self.title = [[UILabel alloc] init];
         self.title.text = @"Photos";
         self.title.backgroundColor = [UIColor blackColor];
