@@ -250,7 +250,7 @@
     UIImage *newImage = [UIImage imageWithCGImage:newImageRef scale:self.scale orientation:UIImageOrientationUp];
     
     // Clean up
-    CGContextRelease(ctx);
+    CGContextRelease(ctxS);
     CGImageRelease(newImageRef);
     
     rect.size.width *= self.scale;

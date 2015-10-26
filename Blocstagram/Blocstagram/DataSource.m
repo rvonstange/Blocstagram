@@ -166,6 +166,7 @@
         Media *mediaItem = [[Media alloc] initWithDictionary:mediaDictionary];
         
         if (mediaItem) {
+            NSLog(@"%@", mediaItem);
             [tmpMediaItems addObject:mediaItem];
         }
     }
