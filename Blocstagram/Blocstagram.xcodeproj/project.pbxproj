@@ -22,6 +22,7 @@
 		D402A5841BDAC58400463B84 /* MediaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D402A5831BDAC58400463B84 /* MediaTests.m */; };
 		D402A5861BDEA8FD00463B84 /* CommentComposeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D402A5851BDEA8FD00463B84 /* CommentComposeTest.m */; };
 		D402A5881BDEC57A00463B84 /* MediaCellHeightTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D402A5871BDEC57A00463B84 /* MediaCellHeightTest.m */; };
+		D402A58A1BDF341C00463B84 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D402A5891BDF341C00463B84 /* Launch Screen.xib */; };
 		D402E0951BCE97CC00BA72F5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D402E0941BCE97CC00BA72F5 /* LoginViewController.m */; };
 		D409C7E21BD02EED001CC4BC /* MediaFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D409C7E11BD02EED001CC4BC /* MediaFullScreenViewController.m */; };
 		D409C7E51BD19359001CC4BC /* MediaFullScreenAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = D409C7E41BD19359001CC4BC /* MediaFullScreenAnimator.m */; };
@@ -30,7 +31,6 @@
 		D4AF6F101BC5A7BA0005FA0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AF6F0F1BC5A7BA0005FA0E /* main.m */; };
 		D4AF6F131BC5A7BA0005FA0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AF6F121BC5A7BA0005FA0E /* AppDelegate.m */; };
 		D4AF6F1B1BC5A7BA0005FA0E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4AF6F1A1BC5A7BA0005FA0E /* Images.xcassets */; };
-		D4AF6F1E1BC5A7BA0005FA0E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4AF6F1C1BC5A7BA0005FA0E /* LaunchScreen.xib */; };
 		D4AF6F2A1BC5A7BA0005FA0E /* BlocstagramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AF6F291BC5A7BA0005FA0E /* BlocstagramTests.m */; };
 		D4AF6F3E1BC5A8F30005FA0E /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D4AF6F341BC5A8F30005FA0E /* 1.jpg */; };
 		D4AF6F3F1BC5A8F30005FA0E /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D4AF6F351BC5A8F30005FA0E /* 2.jpg */; };
@@ -87,6 +87,7 @@
 		D402A5831BDAC58400463B84 /* MediaTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaTests.m; sourceTree = "<group>"; };
 		D402A5851BDEA8FD00463B84 /* CommentComposeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentComposeTest.m; sourceTree = "<group>"; };
 		D402A5871BDEC57A00463B84 /* MediaCellHeightTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaCellHeightTest.m; sourceTree = "<group>"; };
+		D402A5891BDF341C00463B84 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		D402E0931BCE97CC00BA72F5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		D402E0941BCE97CC00BA72F5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		D409C7E01BD02EED001CC4BC /* MediaFullScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaFullScreenViewController.h; sourceTree = "<group>"; };
@@ -103,7 +104,6 @@
 		D4AF6F111BC5A7BA0005FA0E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D4AF6F121BC5A7BA0005FA0E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D4AF6F1A1BC5A7BA0005FA0E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D4AF6F1D1BC5A7BA0005FA0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D4AF6F231BC5A7BA0005FA0E /* BlocstagramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlocstagramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4AF6F281BC5A7BA0005FA0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4AF6F291BC5A7BA0005FA0E /* BlocstagramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlocstagramTests.m; sourceTree = "<group>"; };
@@ -229,7 +229,6 @@
 				D402A56A1BD6E31400463B84 /* CameraViewController.m */,
 				D402A56C1BD6EA3500463B84 /* UIImage+ImageUtilities.h */,
 				D402A56D1BD6EA3500463B84 /* UIImage+ImageUtilities.m */,
-				D4AF6F1C1BC5A7BA0005FA0E /* LaunchScreen.xib */,
 				D4AF6F0D1BC5A7BA0005FA0E /* Supporting Files */,
 				D409C7E61BD47C50001CC4BC /* CircularSpinnerView.h */,
 				D409C7E71BD47C50001CC4BC /* CircularSpinnerView.m */,
@@ -239,6 +238,7 @@
 				D402A5701BD80AA300463B84 /* CropBox.m */,
 				D402A57B1BD98D5600463B84 /* PostToInstagramViewController.h */,
 				D402A57C1BD98D5600463B84 /* PostToInstagramViewController.m */,
+				D402A5891BDF341C00463B84 /* Launch Screen.xib */,
 			);
 			path = Blocstagram;
 			sourceTree = "<group>";
@@ -342,6 +342,7 @@
 				TargetAttributes = {
 					D4AF6F091BC5A7BA0005FA0E = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = Q9UD2MFM52;
 					};
 					D4AF6F221BC5A7BA0005FA0E = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -379,9 +380,9 @@
 				D4AF6F401BC5A8F30005FA0E /* 3.jpg in Resources */,
 				D4AF6F431BC5A8F30005FA0E /* 6.jpg in Resources */,
 				D4AF6F3E1BC5A8F30005FA0E /* 1.jpg in Resources */,
-				D4AF6F1E1BC5A7BA0005FA0E /* LaunchScreen.xib in Resources */,
 				D4AF6F421BC5A8F30005FA0E /* 5.jpg in Resources */,
 				D4AF6F441BC5A8F30005FA0E /* 7.jpg in Resources */,
+				D402A58A1BDF341C00463B84 /* Launch Screen.xib in Resources */,
 				D4AF6F3F1BC5A8F30005FA0E /* 2.jpg in Resources */,
 				D4AF6F471BC5A8F30005FA0E /* 10.jpg in Resources */,
 				D4AF6F1B1BC5A7BA0005FA0E /* Images.xcassets in Resources */,
@@ -498,17 +499,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		D4AF6F1C1BC5A7BA0005FA0E /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D4AF6F1D1BC5A7BA0005FA0E /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		D4AF6F2B1BC5A7BA0005FA0E /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -593,6 +583,7 @@
 			baseConfigurationReference = A61D1C1FFEE0FEA91B509245 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Blocstagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -604,6 +595,7 @@
 			baseConfigurationReference = D778A2B4EEEC57AED93EB5D2 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Blocstagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
